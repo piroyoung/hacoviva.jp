@@ -15,7 +15,10 @@ jobs:
             echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
             gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
             gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
-            gsutil cp -r ./src/rendered gs://hacoviva.jp
+            gsutil cp -r ./src/rendered/*.html gs://hacoviva.jp
+            gsutil cp -r ./src/rendered/assets gs://hacoviva.jp
+            gsutil cp -r ./src/rendered/css gs://hacoviva.jp
+            gsutil cp -r ./src/rendered/js gs://hacoviva.jp
 
   deploy_dev:
     docker:
