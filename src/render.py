@@ -25,7 +25,7 @@ class Renderer:
 
 
 pages: List[str] = [
-    "index.html"
+    "index.html",
     "profile.html"
 ]
 
