@@ -26,6 +26,7 @@ class Renderer:
 
 pages: List[str] = [
     "index.html"
+    "profile.html"
 ]
 
 
