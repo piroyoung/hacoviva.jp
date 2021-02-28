@@ -7,12 +7,15 @@ jobs:
       - checkout
       - run:
           command: |
+            pip3 install jinja2
+            cd src
+            python3 render.py
+      - run:
+          command: |
             echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
             gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
             gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
-            gsutil cp ./index.html gs://hacoviva.jp
-            gsutil cp -r ./assets gs://hacoviva.jp
-            gsutil cp -r ./css gs://hacoviva.jp
+            gsutil cp -r ./src/rendered gs://hacoviva.jp
 
   deploy_dev:
     docker:
@@ -21,12 +24,16 @@ jobs:
       - checkout
       - run:
           command: |
+            pip3 install jinja2
+            cd src
+            python3 render.py
+      - run:
+          command: |
             echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
             gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
             gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
-            gsutil cp ./index.html gs://dev.hacoviva.jp
-            gsutil cp -r ./assets gs://dev.hacoviva.jp
-            gsutil cp -r ./css gs://dev.hacoviva.jp
+            gsutil cp -r ./src/rendered gs://dev.hacoviva.jp
+
 
 workflows:
   version: 2

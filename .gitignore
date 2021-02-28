@@ -1,3 +1,4 @@
 **/.idea
 **/*.iml
 rendered/*.html
+src/rendered/*.html
