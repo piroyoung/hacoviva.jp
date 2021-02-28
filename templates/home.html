@@ -1,0 +1,76 @@
+{% extends "global.haml" %}
+{% block body %}
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">HACOVIVA</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">あなたの街を旅する商店街、ハコビバ</h2>
+            <a class="btn btn-primary js-scroll-trigger" href="#about">もっとみる</a>
+        </div>
+    </div>
+</header>
+<section class="about-section text-center" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">あなたの街を旅する商店街</h2>
+                <p class="text-white-50">
+                    ここに説明文がはいります．
+                </p>
+            </div>
+        </div>
+        <img class="img-about" src="assets/img/about.webp" alt="" />
+    </div>
+</section>
+<!-- Projects-->
+<section class="projects-section bg-light" id="projects">
+    <div class="container">
+        <!-- Featured Project Row-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/event00.webp" alt="" /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>2021/02/01 - 02/14: コンセプト＠最新のイベントの場所</h4>
+                    <p class="text-black-50 mb-0">
+                        イベントのコンセプトの説明文とリンク
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Project One Row-->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6"><img class="img-fluid" src="assets/img/event01.webp" alt="" /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">過去のイベント情報１</h4>
+                            <p class="mb-0 text-white-50">
+                                過去のイベントの説明文とリンク
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 ml-0" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6"><img class="img-fluid" src="assets/img/event02.webp" alt="" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">過去のイベントの情報２</h4>
+                            <p class="mb-0 text-white-50">
+                                過去のイベントの説明文とリンク
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 mr-0" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
