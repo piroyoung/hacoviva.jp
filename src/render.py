@@ -1,7 +1,7 @@
 from typing import List
 
 from jinja2 import Environment
-from jinja2 import PackageLoader
+from jinja2 import FileSystemLoader
 from jinja2 import select_autoescape
 
 from dataclasses import dataclass
@@ -15,7 +15,7 @@ class Renderer:
     def of_default(cls):
         return cls(
             environment=Environment(
-                loader=PackageLoader("src"),
+                loader=FileSystemLoader("templates"),
                 autoescape=select_autoescape(["html"])
             )
         )
