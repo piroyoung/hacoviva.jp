@@ -1,3 +1,9 @@
-.custom-logo {
-    margin-bottom: 30px;
+a.share-button-twitter {
+    color: #ffffff;
+    background-color: #00acee;
+}
+
+a.share-button-facebook {
+    color: #ffffff;
+    background-color: #3b5998;
 }
