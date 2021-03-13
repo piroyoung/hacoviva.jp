@@ -17,3 +17,8 @@ a.share-button-twitter {
 a.share-button-facebook {
     background-color: #3b5998;
 }
+
+.follow-bar {
+    display: block;
+    height: 50px;
+}
