@@ -1,0 +1,24 @@
+.share-bar {
+    display: block;
+}
+
+a.share-button {
+    color: #ffffff;
+}
+
+a.share-button:hover {
+    color: #ffffff;
+}
+
+a.share-button-twitter {
+    background-color: #00acee;
+}
+
+a.share-button-facebook {
+    background-color: #3b5998;
+}
+
+.follow-bar {
+    display: block;
+    height: 50px;
+}

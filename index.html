@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
+        <meta property="og:title" content="HACOVIVA.JP" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hacoviva.jp" />
+        <meta property="og:image" content="https://hacoviva.jp/assets/image/logo-ligit.png" />
+        <meta property="og:site_name" content="HACOVIVA.JP" />
+        <meta property="og:description" content="あなたの街を旅する商店街。" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKPBFHYHLZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YKPBFHYHLZ');
+        </script>
+
         <title>ハコビバ あなたの街を旅する商店街</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -13,6 +31,7 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/custom.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
@@ -37,8 +56,9 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">HACOVIVA</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">あなたの街を旅する商店街、ハコビバ</h2>
+                    <h1>
+                        <img class="img-fluid mb-1" src="assets/img/logo-dark.webp" width="600">
+                    </h1>
                     <a class="btn btn-primary js-scroll-trigger" href="#about">もっとみる</a>
                 </div>
             </div>
@@ -50,36 +70,93 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">あなたの街を旅する商店街</h2>
                         <p class="text-white-50">
-                            ここに説明文がはいります．
+                            旅する街の彩りを集めて、あなたのもとにお届けします。
+                            様々なジャンルの名店・老舗・新店集まる素敵な空間。
+                            きっともっとこの街が好きになる。
                         </p>
                     </div>
                 </div>
-                <img class="img-about" src="assets/img/about.webp" alt="" />
+                <div class="row justify-content-center follow-bar">
+                    <a class="mx-2 col-2 align-middle"
+                       href="https://twitter.com/hacovivajp/"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="mx-2 col-2 align-middle"
+                       href="https://www.instagram.com/hacovivajp/"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="mx-2 col-2 align-middle"
+                       href="mailto:support@hacoviva.jp"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container">
-                <!-- Featured Project Row-->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/event00.webp" alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>2021/02/01 - 02/14: コンセプト＠最新のイベントの場所</h4>
-                            <p class="text-black-50 mb-0">
-                                イベントのコンセプトの説明文とリンク
-                            </p>
+                <div class="row no-gutters mt-4 mb-4 mb-lg-5">
+                    <div class="col">
+                        <h1 class="text-center">開催中のイベント</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 w-100 mx-auto">
+                        <div class="list-group list-group-horizontal share-bar">
+                            <a class="list-group-item flex-fill share-button share-button-twitter text-center"
+                               href="http://twitter.com/share?url=https://hacoviva.jp/%23projects&text=[2021/3/20-21]HACOVIVA KICK OFF PARTY!@京王多摩センター/パルテノン大通り&via=hacovivajp&hashtags=hacovivajp"
+                               target="_blank"
+                               rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="list-group-item flex-fill share-button share-button-facebook text-center"
+                               href="https://www.facebook.com/sharer/sharer.php?u=https://hacoviva.jp#projects"
+                               target="_blank"
+                               rel="noopener">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>HACOVIVA KICK OFF PARTY!!</h4>
+                            <h4>パルテノン大通り＠京王多摩センター</h4>
+                            <h4>2021/02/20-21(Sat-Sun) </h4>
+                            <h4>10:00 - 15:00</h4>
+                            <p class="text-black-50 mb-0">
+                                旅する商店街「HACOVIVA」がパルテノン大通りにやってくる！
+                                今回は、イタリアン・カフェ・中華など、様々なジャンルのレストランが参加、
+                                お好きなメニューをテイクアウトしてご自宅でお楽しみいただけます。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <iframe class="embed-responsive mb-3 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.189254511415!2d139.42322501566795!3d35.62306064076654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e335425bd6e9%3A0x38769d5c6b93e809!2z44OR44Or44OG44OO44Oz5aSn6YCa44KK!5e0!3m2!1sja!2sjp!4v1615383296863!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
                 <!-- Project One Row-->
+                <div class="row no-gutters mt-4 mb-4 mb-lg-5">
+                    <div class="col">
+                        <h1 class="text-center">参加店舗</h1>
+                    </div>
+                </div>
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/event01.webp" alt="" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/lido.png" alt="" /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">過去のイベント情報１</h4>
+                                    <h4 class="text-white">横丁ワイン酒場　LIDO</h4>
                                     <p class="mb-0 text-white-50">
                                         過去のイベントの説明文とリンク
                                     </p>
@@ -91,14 +168,14 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/event02.webp" alt="" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/re-eight.png" alt="" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">過去のイベントの情報２</h4>
+                                    <h4 class="text-white">喫茶リエート</h4>
                                     <p class="mb-0 text-white-50">
-                                        過去のイベントの説明文とリンク
+
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
@@ -106,47 +183,65 @@
                         </div>
                     </div>
                 </div>
+                <div class="row no-gutters mt-4 mb-4 mb-lg-5">
+                    <div class="col">
+                        <h1 class="text-center">ご利用方法</h1>
+                    </div>
+                </div>
+                <div class="row no-gutters mb-4 mb-lg-5">
+                    <div class="col">
+                        <img class="img-fluid mx-auto" src="assets/img/howto.webp">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 w-100 mx-auto">
+                        <div class="list-group list-group-horizontal share-bar">
+                            <a class="list-group-item flex-fill share-button share-button-twitter text-center"
+                               href="http://twitter.com/share?url=https://hacoviva.jp/%23projects&text=[2021/3/20-21]HACOVIVA KICK OFF PARTY!@京王多摩センター/パルテノン大通り&via=hacovivajp&hashtags=hacovivajp"
+                               target="_blank"
+                               rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="list-group-item flex-fill share-button share-button-facebook text-center"
+                               href="https://www.facebook.com/sharer/sharer.php?u=https://hacoviva.jp#projects"
+                               target="_blank"
+                               rel="noopener">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <!-- Contact-->
         <section class="contact-section bg-black" id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
-                            </div>
-                        </div>
+                    <div class="col text-center">
+                        <h4>CONTACT US</h4>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-<!--                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>-->
+                    <a class="mx-2"
+                       href="https://twitter.com/hacovivajp/"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="mx-2"
+                       href="https://www.instagram.com/hacovivajp/"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="mx-2"
+                       href="mailto:support@hacoviva.jp"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="far fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </section>
