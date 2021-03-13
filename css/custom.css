@@ -1,9 +1,16 @@
-a.share-button-twitter {
+a.share-button {
+    width: 80px;
     color: #ffffff;
+}
+
+a.share-button:hover {
+    color: #ffffff;
+}
+
+a.share-button-twitter {
     background-color: #00acee;
 }
 
 a.share-button-facebook {
-    color: #ffffff;
     background-color: #3b5998;
 }
