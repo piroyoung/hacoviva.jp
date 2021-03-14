@@ -3,6 +3,8 @@
 }
 
 a.share-button {
+    width: 120px;
+    border-radius: 5px;
     color: #ffffff;
 }
 
@@ -21,4 +23,8 @@ a.share-button-facebook {
 .follow-bar {
     display: block;
     height: 50px;
+}
+
+a.follow-bar-item {
+    color: rgba(255, 255, 255, 0.5);
 }
