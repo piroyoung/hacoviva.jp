@@ -16,4 +16,7 @@ convert-webp:
 	cwebp -lossless $(ASSET)/logo-light.png -o $(ASSET)/logo-light.webp
 	cwebp -lossless $(ASSET)/logo-dark.png -o $(ASSET)/logo-dark.webp
 	cwebp -lossless $(ASSET)/howto.png -o $(ASSET)/howto.webp
+	cwebp -lossless $(ASSET)/howto1.png -o $(ASSET)/howto1.webp
+	cwebp -lossless $(ASSET)/howto2.png -o $(ASSET)/howto2.webp
+	cwebp -lossless $(ASSET)/howto3.png -o $(ASSET)/howto3.webp
 .PHONY: convert-webp
