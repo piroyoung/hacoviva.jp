@@ -22,7 +22,7 @@ convert-webp:
 	cwebp -lossless $(ASSET)/20210320/howto_03.png -o $(ASSET)/20210320/howto_03.webp
 
 	cwebp -lossless $(ASSET)/20210320/01_lido.png -o $(ASSET)/20210320/01_lido.webp
-	cwebp -lossless $(ASSET)/20210320/02_reeight.png -o $(ASSET)/20210320/02_reeight.webp
+	cwebp -lossless $(ASSET)/20210320/02_reeight.jpg -o $(ASSET)/20210320/02_reeight.webp
 	cwebp -lossless $(ASSET)/20210320/03_affidamento.jpg -o $(ASSET)/20210320/03_affidamento.webp
 	cwebp -lossless $(ASSET)/20210320/04_sion.png -o $(ASSET)/20210320/04_sion.webp
 
