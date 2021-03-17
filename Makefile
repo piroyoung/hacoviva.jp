@@ -26,5 +26,6 @@ convert-webp:
 	-cwebp -lossless $(ASSET)/20210320/03_affidamento.jpg -o $(ASSET)/20210320/03_affidamento.webp
 	-cwebp -lossless $(ASSET)/20210320/04_sion.png -o $(ASSET)/20210320/04_sion.webp
 	-cwebp -lossless $(ASSET)/20210320/05_butchers.jpg -o $(ASSET)/20210320/05_butchers.webp
+	-cwebp -lossless $(ASSET)/20210320/06_sunnyheart.png -o $(ASSET)/20210320/06_sunnyheart.webp
 
 .PHONY: convert-webp
