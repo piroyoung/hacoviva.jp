@@ -29,5 +29,10 @@ convert-webp:
 	-cwebp -lossless $(ASSET)/20210320/06_sunnyheart.png -o $(ASSET)/20210320/06_sunnyheart.webp
 	-cwebp -lossless $(ASSET)/20210320/07_madre.png -o $(ASSET)/20210320/07_madre.webp
 	-cwebp -lossless $(ASSET)/20210320/08_suzu.png -o $(ASSET)/20210320/08_suzu.webp
+	-cwebp -lossless $(ASSET)/20210320/09_tamasen.jpg -o $(ASSET)/20210320/09_tamasen.webp
+	-cwebp -lossless $(ASSET)/20210320/10_tamaneko.jpg -o $(ASSET)/20210320/10_tamaneko.webp
+	-cwebp -lossless $(ASSET)/20210320/11_orangecafe.jpg -o $(ASSET)/20210320/11_orangecafe.webp
+	-cwebp -lossless $(ASSET)/20210320/12_sumire.jpg -o $(ASSET)/20210320/12_sumire.webp
+	-cwebp -lossless $(ASSET)/20210320/13_bestselect.png -o $(ASSET)/20210320/13_bestselect.webp
 
 .PHONY: convert-webp
