@@ -39,7 +39,7 @@ convert-webp:
 	-cwebp -lossless $(ASSET)/20210626/03_snagu.jpg -o $(ASSET)/20210626/03_snagu.webp
 	-cwebp -lossless $(ASSET)/20210626/04_patiyara.jpg -o $(ASSET)/20210626/04_patiyara.webp
 	-cwebp -lossless $(ASSET)/20210626/05_cantaro.jpg -o $(ASSET)/20210626/05_cantaro.webp
-	-cwebp -lossless $(ASSET)/20210626/06_ouka.jpeg -o $(ASSET)/20210626/06_ouka.jwebp
+	-cwebp -lossless $(ASSET)/20210626/06_ouka.jpg -o $(ASSET)/20210626/06_ouka.webp
 	-cwebp -lossless $(ASSET)/20210626/07_gozinka.jpg -o $(ASSET)/20210626/07_gozinka.webp
 
 .PHONY: convert-webp
